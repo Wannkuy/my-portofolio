@@ -18,8 +18,21 @@
 <script setup>
 import { ref } from 'vue';
 const experience = ref([
-    { role: 'Frond End Developer', company: 'Jasanya Tech', duration: '2021-present' },
-    { role: 'Frond End Developer', company: 'Jasanya Tech', duration: '2019-2020' },
+    {
+        role: 'Front-End Developer (Magang)',
+        company: 'PT. PLN Indonesia Comnet Plus',
+        duration: '2024 - 2025'
+    },
+    {
+        role: 'Front-End & UI/UX Designer (Magang)',
+        company: 'PT. Pesona Trip',
+        duration: '2024'
+    },
+    {
+        role: 'Front-End & UI/UX Designer (Freelance)',
+        company: 'Jasanya.Tech',
+        duration: '2023 - sekarang'
+    }
 ]);
 </script>
 

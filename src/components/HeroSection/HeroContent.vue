@@ -3,7 +3,7 @@
         <header
             class="text-white capitalize font-bold leading-[100px] mb-[10px] text-4xl md:text-5xl lg:mb-[10px] lg:leading-[75px] md:leading-[45px] text-center lg:text-start"
             ref="textTitle">
-            <span class="block text-primary">Welcome To My Portfolio</span>
+            <span class="block text-primary">Hello I'Am</span>
             <span class="matrix-text" data-text="Muhammad Agus Kurniawan">Muhammad Agus Kurniawan</span>
 
             <h2 class="text-secondary text-[32px] capitalize font-semibold leading-[39px] mb-[20px] lg:text-[28px] md:text-[22px] md:mb-[10px] text-center lg:text-start"

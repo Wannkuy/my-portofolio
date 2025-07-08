@@ -3,10 +3,10 @@
         <!-- Contact Form -->
         <div class="relative z-10 bg-ocean bg-opacity-40 backdrop-blur-md rounded-lg shadow-2xl p-8 max-w-md w-full">
             <Title text="Contact Me" class="text-center mb-6" />
-            <form class="space-y-6">
+            <form class="space-y-6" @submit.prevent="handleSubmit">
                 <!-- Name Field -->
                 <div class="relative">
-                    <input type="text" id="name" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
+                    <input type="text" v-model="name" id="name" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
                     focus:outline-none text-white placeholder-transparent" required />
                     <label for="name" class="absolute left-0 text-gray-400 transition-all duration-300 pointer-events-none">
                         Name
@@ -15,7 +15,7 @@
 
                 <!-- Email Field -->
                 <div class="relative">
-                    <input type="email" id="email" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
+                    <input type="email" v-model="email" id="email" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
                     focus:outline-none text-white placeholder-transparent" required />
                     <label for="email"
                         class="absolute left-0 text-gray-400 transition-all duration-300 pointer-events-none">
@@ -25,7 +25,7 @@
 
                 <!-- Message Field -->
                 <div class="relative">
-                    <textarea id="message" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
+                    <textarea v-model="message" id="message" class="w-full px-4 py-2 bg-transparent border-b-2 border-gray-600 focus:border-primary
                     focus:outline-none text-white placeholder-transparent" required rows="4"></textarea>
                     <label for="message"
                         class="absolute left-0 text-gray-400 transition-all duration-300 pointer-events-none">
@@ -36,15 +36,35 @@
                 <!-- Submit Button -->
                 <Button label="Send Message" />
             </form>
+            <p v-if="successMessage" class="text-green-500 text-center mt-4">{{ successMessage }}</p>
         </div>
     </section>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { gsap } from "gsap";
 import Title from "@components/reusable/Title.vue"
 import Button from "@components/reusable/Button.vue"
+
+const name = ref('');
+const email = ref('');
+const message = ref('');
+const successMessage = ref('');
+
+const handleSubmit = () => {
+    // Simulasi pengiriman data
+    if (name.value && email.value && message.value) {
+        // Di sini Anda bisa menambahkan logika untuk mengirim data ke server
+        successMessage.value = 'Your message has been sent successfully!';
+        // Reset form
+        name.value = '';
+        email.value = '';
+        message.value = '';
+    } else {
+        successMessage.value = 'Please fill in all fields.';
+    }
+};
 
 onMounted(() => {
     const inputs = document.querySelectorAll('input, textarea');
@@ -79,23 +99,19 @@ onMounted(() => {
 @media (max-width: 640px) {
     .mi-h-screen {
         padding: 2rem 1rem;
-        /* Add padding for smaller screens */
     }
 
     .bg-ocean {
         background-color: rgba(0, 0, 0, 0.5);
-        /* Adjust background for better visibility */
     }
 
     input,
     textarea {
         font-size: 1rem;
-        /* Adjust font size for smaller screens */
     }
 
     label {
         font-size: 14px;
-        /* Adjust label font size */
     }
 }
 </style>
