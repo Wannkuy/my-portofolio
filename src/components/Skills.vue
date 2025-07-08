@@ -40,12 +40,20 @@ import { gsap } from 'gsap';
 import Title from '@components/reusable/Title.vue';
 
 const skills = ref([
-    { name: 'Vue.js', percentage: 90 },
-    { name: 'React', percentage: 85 },
-    { name: 'JavaScript', percentage: 95 },
+    { name: 'HTML', percentage: 90 },
+    { name: 'CSS', percentage: 95 },
+    { name: 'PHP', percentage: 70 },
+    { name: 'Canva', percentage: 95 },
+    { name: 'Vue.js', percentage: 80 },
+    { name: 'JavaScript', percentage: 90 },
     { name: 'Tailwind css', percentage: 80 },
-    { name: 'Node.js', percentage: 75 },
-    { name: 'Python', percentage: 70 }
+    { name: 'Figma', percentage: 85 },
+    { name: 'Python', percentage: 60 },
+    { name: 'Git & GitHub', percentage: 85 },
+    { name: 'REST API Integration', percentage: 80 },
+    { name: 'UI/UX Design Principles', percentage: 85 },
+    { name: 'Responsive Design', percentage: 90 },
+    { name: 'Agile Workflow', percentage: 70 },
 ])
 
 const skillsCircles = ref([]);
