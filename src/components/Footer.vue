@@ -25,7 +25,7 @@
                         <font-awesome-icon :icon="['fab', 'instagram']" class="w-6 h-6" />
                     </a>
 
-                    <a href="https://twitter.com/your_twitter_username" class="hover:opacity-75 text-white" target="_blank"
+                    <a href="https://twitter.com/YahWann15" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="Twitter">
                         <font-awesome-icon :icon="['fab', 'twitter']" class="w-6 h-6" />
                     </a>
@@ -35,7 +35,7 @@
                         <font-awesome-icon :icon="['fab', 'linkedin-in']" class="w-6 h-6" />
                     </a>
 
-                    <a href="https://wa.me/your_whatsapp_number" class="hover:opacity-75 text-white" target="_blank"
+                    <a href="https://wa.me/085695573510" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="WhatsApp">
                         <font-awesome-icon :icon="['fab', 'whatsapp']" class="w-6 h-6" />
                     </a>

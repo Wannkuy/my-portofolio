@@ -31,17 +31,17 @@ const services = [
     {
         icon: ['fas', 'code'],
         title: 'Web Development',
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellendus!'
+        description: '"Pembuatan website responsif dengan Vue.js, TailwindCSS, dan REST API."'
     },
     {
         icon: ['fas', 'chart-line'],
         title: 'SEO Optimization',
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellendus!'
+        description: '"Optimasi performa dan struktur website agar mudah ditemukan di Google."'
     },
     {
         icon: ['fas', 'paint-brush'],
         title: 'Branding & Design',
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellendus!'
+        description: '"Desain visual menarik yang memperkuat identitas digital bisnis Anda."'
     }
 ];
 
