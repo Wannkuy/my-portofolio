@@ -1,0 +1,63 @@
+.matrix-text {
+  color: #ffffff; /* Warna teks utama */
+  font-family: monospace; /* Font monospace untuk efek matrix */
+  position: relative; /* Posisi relatif untuk elemen anak */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Efek bayangan teks */
+  z-index: 2; /* Pastikan teks berada di atas elemen lain */
+}
+
+.matrix-text::before {
+  content: attr(data-text);
+  position: absolute; /* Posisi absolut untuk menempatkan teks di atas */
+  top: 0; /* Menempatkan di bagian atas */
+  left: 0; /* Menempatkan di sebelah kiri */
+  width: 100%; /* Lebar 100% dari elemen induk */
+  height: 100%; /* Tinggi 100% dari elemen induk */
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%); /* Memotong bentuk teks */
+  transform: translate(-2px, -2px); /* Menggeser teks sedikit */
+  color: #ffffff; /* Warna teks untuk efek glitch */
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff; /* Efek bayangan untuk teks glitch */
+  animation: glitch 2s infinite; /* Menambahkan animasi glitch */
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 45%,
+      0 45%
+    ); /* Bentuk awal dan akhir */
+    transform: translate(0); /* Tidak ada pergeseran */
+  }
+  33% {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 15%,
+      0 15%
+    ); /* Memotong bentuk untuk efek glitch */
+    transform: translate(-5px, -5px); /* Menggeser teks ke kiri atas */
+  }
+  66% {
+    clip-path: polygon(
+      0 85%,
+      100% 85%,
+      100% 100%,
+      0 100%
+    ); /* Memotong bentuk untuk efek glitch */
+    transform: translate(5px, 5px); /* Menggeser teks ke kanan bawah */
+  }
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  backgroumd-image: linear-gradient(180deg, #17bbab, #ffe600);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  backgroumd: #060b18;
+}
