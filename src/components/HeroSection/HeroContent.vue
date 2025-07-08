@@ -14,7 +14,7 @@
             <p class="text-white text-[19px] font-normal leading-[33px] mb-[30px]" ref="textDescription">
                 Saya adalah Front-End Developer yang berfokus pada pengembangan antarmuka pengguna yang intuitif dan
                 responsif.
-                Berpengalaman menggunakan HTML, CSS, JavaScript, serta framework seperti Vue.js dan React.
+                Berpengalaman menggunakan HTML, CSS, JavaScript, serta framework seperti Vue.js dan TailwindCSS.
                 Saya juga menguasai proses UI/UX Design dari research hingga prototyping, untuk menciptakan pengalaman
                 pengguna yang optimal.
             </p>

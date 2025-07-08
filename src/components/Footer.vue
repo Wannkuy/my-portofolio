@@ -2,8 +2,9 @@
     <footer class="mt-8 border bg-ocean bg-opacity-40 text-white">
         <div class="container p-12 grid grid-cols-1 md:grid-cols-4 gap-10">
             <div class="flex flex-col justify-between md:col-span-1">
-                <div class="text-3xl font-bold mb-4">LOGO</div>
-                <p>&copy; {{ new Date().getFullYear() }} All rights reserved.</p>
+                <img src="/Logo.png" alt="Logo" class="rounded-full w-32 h-32 object-cover mb-4 border border-primary"
+                    ref="Logo" />
+                <p class="text-sm">&copy; {{ new Date().getFullYear() }} All rights reserved.</p>
             </div>
 
             <div>
@@ -19,7 +20,7 @@
 
             <div>
                 <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
-                <div class="flex space-x-3">
+                <div class="flex space-x-4">
                     <a href="https://www.instagram.com/wan_sky15" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="Instagram">
                         <font-awesome-icon :icon="['fab', 'instagram']" class="w-6 h-6" />
@@ -41,7 +42,6 @@
                     </a>
                 </div>
             </div>
-
 
             <div class="md:col-span-1">
                 <h3 class="text-xl font-semibold mb-4">Stay Updated</h3>
@@ -66,31 +66,10 @@ import { ref } from 'vue';
 const email = ref('');
 const message = ref('');
 
-const subscribeNewsletter = async () => {
-    // In a real application, you would send this email to your backend server
-    // For demonstration, we'll just simulate a successful subscription
-    console.log(`Subscribing email: ${email.value}`);
-
-    // Simulate API call
-    try {
-        // Replace with your actual API call (e.g., using axios or fetch)
-        // await fetch('/api/subscribe', {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //   },
-        //   body: JSON.stringify({ email: email.value }),
-        // });
-
-        message.value = 'Thank you for subscribing!';
-        email.value = ''; // Clear the input field
-    } catch (error) {
-        message.value = 'Subscription failed. Please try again later.';
-        console.error('Subscription error:', error);
-    }
+const subscribeNewsletter = () => {
+    // Logic for subscribing to the newsletter
+    message.value = "Thank you for subscribing!";
 };
 </script>
 
-<style>
-/* Add any custom styles if needed, e.g., for 'bg-ocean' if it's not a utility class */
-</style>
+<style></style>
