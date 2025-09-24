@@ -22,7 +22,7 @@
 
         <footer class="flex justify-center lg:justify-start" ref="buttonContainer">
             <Button label="Hire Me" />
-            <a href="/CV-Muhammad Agus Kurniawan.pdf" download
+            <a href="/CV-Muhammad-Agus-Kurniawan.pdf" download
                 class="ml-4 rounded-full border-2 border-primary font-semibold py-3 px-6 transition-all duration-300 hover:scale-105 flex items-center gap-2 text-primary">
                 <font-awesome-icon :icon="['fas', 'download']" />
                 <span>Download CV</span>
