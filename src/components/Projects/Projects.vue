@@ -39,37 +39,37 @@ import projectCard from "@components/Projects/projectCard.vue";
 
 const projects = ref([
     {
-        title: 'project 1',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project1.jpeg',
+        title: 'Portofolio',
+        description: 'Website Portofolio Muhammad Agus Kurniawan',
+        image: '/portofolio.png',
         link: '#'
     },
     {
-        title: 'project 2',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project2.jpeg',
+        title: 'Outlet Pintar',
+        description: 'Website yang digunakan untuk sistem transaksi digital',
+        image: '/OP.jpg',
         link: '#'
     },
     {
-        title: 'project 3',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project3.jpeg',
+        title: 'Management Gudang',
+        description: 'Website yang berfungsi untuk mengelola gudang',
+        image: '/weberp.svg',
         link: '#'
     },
     {
-        title: 'project 4',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project1.jpeg',
+        title: 'Pesona Trip',
+        description: 'Website pemesanan paket wisata Indonesia: alam, budaya, kuliner, petualangan.',
+        image: '/Home.svg',
         link: '#'
     }, {
-        title: 'project 5',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project2.jpeg',
+        title: 'Leading Page PLN',
+        description: 'Petunjuk Penggunaan Voucher di PLN Mobile',
+        image: '/leandingpagepln.jpg',
         link: '#'
     }, {
-        title: 'project 6',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        image: '/project3.jpeg',
+        title: 'Jasanya Tech',
+        description: 'Sebuah profile company dari jasanyateech.id',
+        image: '/webjasanya.jpg',
         link: '#'
     },
 ])
