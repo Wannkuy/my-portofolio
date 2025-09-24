@@ -4,7 +4,7 @@
         <div class="absolute w-full h-full rounded-full bg-primary blur-2xl scale-[0.95] z-[-10]" ref="glowBackground">
         </div>
 
-        <img src="/heroPicture.jpeg" alt="hero image"
+        <img src="/heroPicture.jpg" alt="hero image"
             class="rounded-full w-full h-full object-cover relative z-20 border border-primary" ref="heroImage" />
     </figure>
 </template>
