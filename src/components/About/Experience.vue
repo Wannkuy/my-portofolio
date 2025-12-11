@@ -19,19 +19,14 @@
 import { ref } from 'vue';
 const experience = ref([
     {
-        role: 'Front-End Developer (Magang)',
-        company: 'PT. PLN Indonesia Comnet Plus',
-        duration: '2024 - 2025'
+        role: 'Helper Gudang',
+        company: 'PT. Permata Indo Kav',
+        duration: '2021'
     },
     {
-        role: 'Front-End & UI/UX Designer (Magang)',
-        company: 'PT. Pesona Trip',
-        duration: '2024'
-    },
-    {
-        role: 'Front-End & UI/UX Designer (Freelance)',
-        company: 'Jasanya.Tech',
-        duration: '2023 - sekarang'
+        role: 'Staff Administrasi (Magang)',
+        company: 'PT. Sejahtera Sakti Indonesia',
+        duration: '2025'
     }
 ]);
 </script>

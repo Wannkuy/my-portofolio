@@ -30,8 +30,8 @@ import Title from '@components/reusable/Title.vue';
 const services = [
     {
         icon: ['fas', 'code'],
-        title: 'Web Development',
-        description: '"Pembuatan website responsif dengan Vue.js, TailwindCSS, dan REST API."'
+        title: 'Analyst Data',
+        description: '"Pengolahan Data dengan Tools Rapidminer berbasis Drag-and-Drop."'
     },
     {
         icon: ['fas', 'chart-line'],

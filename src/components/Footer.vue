@@ -2,7 +2,7 @@
     <footer class="mt-8 border bg-ocean bg-opacity-40 text-white">
         <div class="container p-12 grid grid-cols-1 md:grid-cols-4 gap-10">
             <div class="flex flex-col justify-between md:col-span-1">
-                <img src="/Logo.png" alt="Logo" class="rounded-full w-32 h-32 object-cover mb-4 border border-primary"
+                <img src="/logoFiid.png" alt="Logo" class="rounded-full w-32 h-32 object-cover mb-4 border border-primary"
                     ref="Logo" />
                 <p class="text-sm">&copy; {{ new Date().getFullYear() }} All rights reserved.</p>
             </div>
@@ -21,22 +21,23 @@
             <div>
                 <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
                 <div class="flex space-x-4">
-                    <a href="https://www.instagram.com/wan_sky15" class="hover:opacity-75 text-white" target="_blank"
+                    <a href="https://www.instagram.com/fiidmuhzain" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="Instagram">
                         <font-awesome-icon :icon="['fab', 'instagram']" class="w-6 h-6" />
                     </a>
 
-                    <a href="https://twitter.com/YahWann15" class="hover:opacity-75 text-white" target="_blank"
+                    <!-- <a href="https://twitter.com/YahWann15" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="Twitter">
                         <font-awesome-icon :icon="['fab', 'twitter']" class="w-6 h-6" />
-                    </a>
+                    </a> -->
 
-                    <a href="https://www.linkedin.com/in/wann-kurniawan-15614132a/" class="hover:opacity-75 text-white"
-                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <font-awesome-icon :icon="['fab', 'linkedin-in']" class="w-6 h-6" />
-                    </a>
+                    <!-- <a href="https://www.linkedin.com/in/wann-kurniawan-15614132a/" class="hover:opacity-75 text-black"
+                        target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <font-awesome-icon :icon="['fab', 'facebook']" class="w-6 h-6" />
+                    </a> -->
 
-                    <a href="https://wa.me/085695573510" class="hover:opacity-75 text-white" target="_blank"
+
+                    <a href="https://wa.me/082213657513" class="hover:opacity-75 text-white" target="_blank"
                         rel="noopener noreferrer" aria-label="WhatsApp">
                         <font-awesome-icon :icon="['fab', 'whatsapp']" class="w-6 h-6" />
                     </a>

@@ -11,9 +11,10 @@ class CustomShaderMaterial extends THREE.ShaderMaterial {
         super({
             uniforms: {
                 time: { value: 0 },
-                color1: { value: new THREE.Color('#1D2B53') },
-                color2: { value: new THREE.Color('#006d99') },
-                color3: { value: new THREE.Color('#ffe600') },
+                color1: { value: new THREE.Color('#0a0f1f') }, // Dark navy blue
+                color2: { value: new THREE.Color('#005f73') }, // Tech-teal
+                color3: { value: new THREE.Color('#94d2bd') }, // Soft mint highlight
+
                 resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
             },
             vertexShader: `

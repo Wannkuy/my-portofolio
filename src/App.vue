@@ -8,9 +8,9 @@
             <Navbar />
             <HeroSection />
             <Services />
-            <Skills />
+            <!-- <Skills /> -->
             <About />
-            <Projects />
+            <!-- <Projects /> -->
             <Contact />
             <Footer />
             <ToTop />
